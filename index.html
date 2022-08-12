@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Age Calculation</title>
+    <script>
+        function years(form){
+            form.dogAge.value = form.age.value * 7;
+        }
+    </script>
+</head>
+<body>
+    <!-- This is just a mini JS Project. I feel it is even too simple to be called a Project. lol -->
+    <h3>Find out what your Dog age is</h3>
+    <form action="post">
+        <h4>Find out your age in Dog Years</h4>
+        <label for="age">Enter your age: </label>
+        <input type="text" name="age">
+        <input type="button" value="Submit" onclick="years(this.form)"><br><br>
+        <label for="Dog age">Your Dog age is: </label>
+        <input type="text" name="dogAge">
+    </form>
+</body>
+</html>
